@@ -10,8 +10,8 @@
                   <input placeholder="Username" name="uname" class="form-control-cust" type="text" autofocus="">
                   <input placeholder="Password" name="password" class="form-control-cust" type="password" value="">
                   <br>
-                  <button class="badge badge-primary">Login</button>
-                  <a class="badge badge-primary" href="#">Join Now</a>
+                  <a class="badge badge-primary" style="background-color: #005184" href="{{ route('login') }}">Login</a>
+                  <a class="badge badge-primary" style="background-color: #005184" href="{{ route('register') }}">Join Now</a>
               </form>
           </div>
       </div>

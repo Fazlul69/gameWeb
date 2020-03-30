@@ -4,7 +4,7 @@
 
     <style type="text/css">
         .all_sports{
-            background-color: #558648;
+            background-color: #0a2940/*#558648*/;
         }
         .text_color{
             color: #ffffff;
@@ -23,30 +23,38 @@
             color: #105711;
         }
         .headline{
-            background-color: #21700C;
+            background-color: #4987B8;
             color: #ffffff;
             padding-top:10px;
             padding-bottom: 10px;
             margin-top: 20px;
+         }
+         .table_content{
+          background-color: #4987B8;
          }
          /*col-md-4*/
          .ash {
            color: #CEC7B9;
            font-size: 20px;
         }
-        .most_left{
-           margin-top: 212px;
-           font-size: 20px;
+        .team_name{
+          background-color: #fff;
+          color: #4987B8;
+          font-size: 20px;
+          font-weight: 800;
         }
          /*sport table start*/
          .back_style{
+            
+            border-left: 2px solid #005580;
+            border-top: 1px solid #005580;
+            border-bottom: 1px solid #005580;
             background-color: #ffffff;
             text-align: center;
-            padding: 0px;
          }
          .back_style:hover{
-            background-color: #196711;
-            border-radius: 25px;
+            background-color: #3896DF;
+            /*border-radius: 25px;*/
          }
          /*counter in modal*/
          .stepper-sport .stepper .stepper-arrow {
@@ -236,7 +244,7 @@
 @section('content')
     <section class="all_sports">
         <div class="container">
-             <ul class="nav nav-tabs">
+             <ul class="nav nav-tabs" style="background-color: #1A5685;">
                 <li class="active text_color"><a data-toggle="tab" href="#home" charset=><img src="img/cricket.png"><br>Cricket</a></li>
                 <li><a data-toggle="tab" href="#menu1"><img src="img/soccer-1.png"><br>Football</a></li>
                 <li><a data-toggle="tab" href="#menu2"><img src="img/basketball-1.png"><br>Basket</a></li>
@@ -251,32 +259,18 @@
                       <div class="col-md-9">
                           <div class="headline">
                               <h4><CENTER>CRICKET</CENTER></h4>
-                          </div>
-                          <div class="row">
-
-                              <div class="col-md-3 most_left">
-                                  <div class="sport-table-title ash" id="match_name_team-1">
-                                    <span class="sport-table-title-team ash"></span>
-                                  </div>
-                                  <div class="sport-table-title">
-                                    <span class="all_span" style="margin-left: 15%; font-size: 20px;">vs</span>
-                                  </div>
-                                  <div class="sport-table-title ash" id="match_name_team-2">
-                                    <span class="sport-table-title-team"></span>
-                                  </div>
-                                  <div class="sport-table-title all_span" id="pubdate" style="margin-top: 15px;font-size: 15px;">
-                                    <!-- <span>T20I</span>
-                                    <br> -->
-                                    <span></span>
-                                  </div>
-                              </div>
-                              <div class="col-md-2" style="margin-top: 250px;">
-                                  <span class="home-game-update" style="color: #74aeca;background-color: #203A12;padding: 12px;border-radius: 18px;">UpComing</span>
-                              </div>
-                              <div class="col-md-7">
-                                  <div class="sport-table">
-                                     <h4 class="all_span"> To Win The Toss</h4>
-                                     <div class="col-md-5 back_style">
+                          </div> 
+                          <div class="table_content">
+                            <div class="team_name">
+                              <a id="match_name_team-1" style="margin-left: 25px; margin-top: 7px;"></a>
+                              <a style="font-size: 20px;">vs</a>
+                              <a id="match_name_team-2"></a>
+                              <p id="pubdate" style="margin-top: 15px;margin-left: 25px;font-size: 15px;margin-bottom: 7px;"></p>                                  
+                            </div>                              
+                            <div class="beat_details">
+                              <div class="sport-table">
+                                  <h4 class="all_span"> To Win The Toss</h4>
+                                     <div class="col-md-4 back_style">
                                          <a href="#" id="trigger-modal" data-toggle="modal" data-target="#myModal" data-match-name="ban vs afg">
                                              <span style="color: #000000;">Afghanistan</span>
                                              <br>
@@ -319,16 +313,24 @@
                                           <!-- modal end -->
                                      </div>
 
-                                     <div class="col-md-5 back_style" style="margin-left: 20px;">
+                                     <div class="col-md-4 back_style">
                                          <a href="#" id="trigger-modal" data-toggle="modal" data-target="#myModal">
                                              <span style="color: #000000;">Ireland</span>
                                              <br>
                                              <span style="color: #000000;">1.2s5</span>
                                          </a>
                                      </div>
-                                  </div>
+                                     <div class="col-md-4 back_style">
+                                         <a href="#" id="trigger-modal" data-toggle="modal" data-target="#myModal">
+                                             <span style="color: #000000;">Ireland</span>
+                                             <br>
+                                             <span style="color: #000000;">1.2s5</span>
+                                         </a>
+                                     </div>
                               </div>
-                          </div>
+                            </div>
+                          </div>                        
+                            
                       </div>
                       <div class="col-md-3">
                         <div class="uppersection">

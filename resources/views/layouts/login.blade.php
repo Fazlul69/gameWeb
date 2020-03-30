@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>practise</title>
+    <title>Registration</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
@@ -13,12 +13,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/normalize.css">
-    
     @yield('style')
 
     <style type="text/css">
         .uper-nav{
-            background-color: #0C4570/*2A2A2A*/; 
+            background-color: #2A2A2A; 
         }
         .badge {
         display: inline-block;
@@ -40,30 +39,63 @@
         border: 0;
      }
     .form-control-cust {
-        border: 2px solid #ffffff;
+        border: 2px solid #a0d87e;
         border-radius: 7px;
         padding: 4px;
         font-size: 14px;
         line-height: 1.25;
         margin-top: 20px;
-        background-color: #000;
      }
     .logo{
         margin-left: 300px;
     }
+
+	.reg{
+        	padding-top: 20px;
+        	padding-bottom: 60px;
+        	background-color: #64905A;
+        }
+    /*footer*/
+      .ssc-srg{
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+      .first_part{
+        background-color: #383838;
+        color: #fff;
+      }
     </style>
 </head>
 <body>
-  <!-- header section -->
   @include('layouts.header')
   @include('layouts.nav')
-  @include('layouts.slider')
-  @yield('content')
+  @include('layouts.breadcrumb')
+ <section class="reg">      
+	<div class="container">
+    	<div class="row">
+       		<div class="col-md-4 col-md-offset-4">
+            	<form action="/action_page.php">
+				  <div class="form-group">
+				    <input type="username" class="form-control" id="name" placeholder="User Name">
+				  </div>
+				  <div class="form-group">
+				    <input type="password" class="form-control" id="pwd" placeholder="Password">
+				  </div>
+				  <button type="submit" class="btn btn-primary" style="margin-left: 155px;">Login</button>
 
-
-  @include('layouts.footer')
-
-  @yield('script')
-
+				  <div style="padding-top: 10px;">
+                      <a href="#">
+                      	<label style="cursor: pointer;color: #EAF607;">Forgot Password</label>
+                      </a> 
+                      <a href="#" class="pull-right">
+                      	<label style="cursor: pointer; color: #EAF607;">Register</label>
+                      </a>
+                   </div>
+				</form>
+       		</div>
+    	</div>
+	</div>
+ </section>
+@include('layouts.footer')
 </body>
 </html>
