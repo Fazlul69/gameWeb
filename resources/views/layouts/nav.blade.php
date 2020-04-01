@@ -21,6 +21,12 @@
     color: #ffff;
     font-size: 15px;
   }
+  .hov>li>a:hover {
+    text-decoration: none;
+    background-color: #000 !important;
+    border-radius: 41px !important;
+    color: #fff;
+}
 
     </style>
 
@@ -40,7 +46,7 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
+      <ul class="nav navbar-nav hov">
         <li><a class="clr a-style" href="#">HOME </a></li>
         <li><a class="clr a-style" href="#">IN-PLAY</a></li>
         <li><a class="clr a-style" href="#">ADVANCE</a></li>

@@ -146,7 +146,7 @@
             text-transform: uppercase;
             font-size: 20px;
             font-weight: 600;
-            background-color: #0c4aff;
+            background-color: #3EA2E0;
             color: #fff;
         }
         .modal-sport-win-left{
@@ -175,12 +175,11 @@
         margin-left: -9px;
       }
       .highlight{
-        background-color: #305222;
+        background-color: #4987B8;
         text-align: center;
         font-size: 25px;
         font-weight: 700;
-        margin-top: 15px;       
-        border-radius: 20px;
+        margin-top: 20px;   
       }
       .description{
         font-size: 14px;
@@ -190,12 +189,10 @@
         margin-bottom: 25px;
       }
       .live_score{
-        background-color: #305222;
+        background-color: #4987B8;
         text-align: center;
         font-size: 25px;
         font-weight: 700;
-        margin-top: 30px;       
-        border-radius: 20px;
       }
       .game-result-cust {
         color: #fff;
@@ -282,7 +279,7 @@
                                             
                                               <!-- Modal content-->
                                               <div class="modal-content">
-                                                <div class="modal-header" style="background-color: #2A2A2A;">
+                                                <div class="modal-header" style="background-color: #3EA2E0;">
                                                   <button type="button" class="close" data-dismiss="modal" style="color: #fcf8e3;font-size: 30px;">&times;</button>
                                                   <h4 class="modal-title" style="color: #ffffff;">PlACE A BET</h4>
                                                 </div>
