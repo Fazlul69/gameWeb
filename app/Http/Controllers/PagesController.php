@@ -13,4 +13,8 @@ class PagesController extends Controller
     public function login(){
     	return view('layouts.login');
     }
+
+    public function reset(){
+    	return view('layouts.reset');
+    }
 }

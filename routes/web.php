@@ -20,3 +20,5 @@ Route::get('/', function () {
 Route::get('/register','PagesController@register')->name('register');
 
 Route::get('/login','PagesController@login')->name('login');
+
+Route::get('/reset','PagesController@reset')->name('reset');

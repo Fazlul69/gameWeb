@@ -370,7 +370,7 @@
 				  <button type="submit" class="btn btn-primary" style="margin-left: 130px;">Register</button>
 
 				  <div style="padding-top: 10px;">
-                      <a href="#">
+                      <a href="{{ route('reset') }}">
                       	<label style="cursor: pointer;color: #EAF607;">Forgot Password</label>
                       </a> 
                       <a href="{{ route('login') }}" class="pull-right">
